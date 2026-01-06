@@ -1,0 +1,91 @@
+/*admin*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;;
+}
+.manage-container {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+}
+.user-search {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+
+.user-search input {
+  width: 100%;
+  padding: 10px 40px;
+  outline: none;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  position: static;
+}
+
+.user-search i {
+  position: relative;
+  left: 40px;
+  z-index: 10;
+  color: #888;
+  margin-right: 8px;
+}
+
+.manage-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background 0.2s;
+    gap: 12px;
+}
+
+.manage-item:hover {
+    background: #f5f5f5;
+}
+
+.manage-item:last-child {
+    border-bottom: none;
+}
+
+.manage-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.manage-item--content {
+    flex: 1;
+}
+
+.manage-group-user{
+  display: flex;
+  gap: 20px;
+}
+
+.btn-view, .btn-delete{
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-view{
+  background: #4caf50;
+}
+
+.btn-delete{
+  background: rgb(232, 5, 5);
+}
